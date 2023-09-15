@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volta comigo?</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
+        #nao:hover {
+            position: relative;
+            top: -10px;
+        }
+    </style>
+</head>
+<body background="red">
+    <h1>Volta comigo?</h1> 
+    <p> vc sabe né, que eu venho nesses erros e tals, me diz aí
+        <br> Eu sei que eu possa ter te perdido mas sabe.. ainda tenho aquele sentimento.
+    </p>
+    <button id="nao" onmouseover="fugir()">não</button>
+    <script>
+        function fugir() {
+            alert("Ei, não fuja de mim!");
+        }
+
+        function perguntarAmor() {
+            var resposta = prompt("Você me ama? (sim/não)");
+
+            if (resposta === "sim") {
+                window.location.href = "https://api.whatsapp.com/send?phone=11937781104";
+            }
+        }
+    </script>
+    <button onclick="perguntarAmor()">Sim</button>
+</body>
+</html>
